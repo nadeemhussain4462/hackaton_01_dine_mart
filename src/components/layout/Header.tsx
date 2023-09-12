@@ -50,16 +50,16 @@ const Header = () => {
           <div className=" flex flex-col items-center justify-center">
             <ul className="flex flex-col text-xl text-center">
               <li className="p-2">
-                <Link href={"/"}>Female</Link>
+                <Link href={"category/female"}>Female</Link>
               </li>
               <li className="p-2">
-                <Link href={"/"}>Male</Link>
+                <Link href={"category/male"}>Male</Link>
               </li>
               <li className="p-2">
-                <Link href={"/"}>Kids</Link>
+                <Link href={"category/kids"}>Kids</Link>
               </li>
               <li className="p-2">
-                <Link href={"/"}>All Products</Link>
+                <Link href={"products"}>All Products</Link>
               </li>
             </ul>
             <div className=" flex justify-center items-center text-center bg-slate-300 text-gray-500 rounded-full p-3 relative hover:scale-110 duration-300 ease-in">

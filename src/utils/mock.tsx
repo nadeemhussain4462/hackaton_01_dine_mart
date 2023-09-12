@@ -1,69 +1,85 @@
-import {Product} from "@/utils/types";
-import prod1 from "./public/prod1.png";
-import Image, {StaticImageData} from "next/image";
+import Image, { StaticImageData } from "next/image";
+import { Product } from "@/utils/types";
+import prod1 from "/public/prod1.png";
+import prod3 from "/public/prod3.png";
+import male1 from "/public/male1.png";
+import male2 from "/public/male2.png";
+import female4 from "/public/female4.png";
+import female5 from "/public/female5.png";
+import female6 from "/public/female6.png";
+import female7 from "/public/female7.png";
+import female8 from "/public/female8.png";
+import female9 from "/public/female9.png";
 
-
-export const Products : Product[]=[{
+export const Products: Product[] = [
+  {
     id: 1,
-    name: "prod1",
+    name: "Brushed Raglan Sweatshirt",
     price: 105,
     category: "female",
-    Image:prod1,
-    
-},
-{
+    Image: prod1,
+  },
+  {
     id: 2,
-    name: "prod2",
+    name: "Brushed Bomber",
     price: 110,
     category: "female",
-    Image: prod1,
-    
-},
-{
+    Image: female9,
+  },
+  {
     id: 3,
-    name: "prod3",
+    name: "Flex Sweatshirt",
     price: 115,
     category: "female",
-    Image: prod1,
-    
-},
-{
+    Image: prod3,
+  },
+  {
     id: 4,
-    name: "prod4",
+    name: "Flex Push Button Bomber",
     price: 120,
     category: "male",
-    Image: prod1,
-    
-},
-{
+    Image: male1,
+  },
+  {
     id: 5,
-    name: "prod5",
+    name: "Flex Sweat_Tshirt",
     price: 125,
     category: "male",
-    Image: prod1,
-    
-},
-{
+    Image: male2,
+  },
+  {
     id: 6,
-    name: "prod6",
+    name: "Imperial Alpaca Hoodie",
     price: 130,
-    category: "male",
-    Image: prod1,
-    
-},
-{
+    category: "female",
+    Image: female7,
+  },
+  {
     id: 7,
-    name: "prod7",
+    name: "Muscle Tank",
     price: 130,
-    category: "kid",
-    Image: prod1,
-    
-},
-{
+    category: "female",
+    Image: female8,
+  },
+  {
     id: 8,
-    name: "prod8",
+    name: "Pink Fleece Sweatpants",
     price: 130,
     category: "kid",
-    Image: prod1,
-    
-}];
+    Image: female5,
+  },
+  {
+    id: 9,
+    name: "Lite Sweatpants",
+    price: 130,
+    category: "female",
+    Image: female6,
+  },
+  {
+    id: 10,
+    name: "White Fleece Sweatpants",
+    price: 130,
+    category: "kid",
+    Image: female4,
+  },
+];

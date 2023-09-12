@@ -90,9 +90,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </div>{" "}
-      <hr className="text-black border-y-black" />
-      <div className="flex flex-col text-start pl-28 gap-5 md:text-start justify-around md:flex-row py-6 border-black text-gray-400 text-sm">
+      </div>
+      <div className="flex flex-col text-start border-t pl-28 gap-5 md:text-start justify-around md:flex-row py-6 border-black text-gray-400 text-sm">
         <p className="">Copyright © 2022 Dine Market</p>
         <p className="">
           Design by. <br />{" "}

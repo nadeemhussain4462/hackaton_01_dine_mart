@@ -1,11 +1,8 @@
-// import ProductCard from "@/components/ProductCard";
 import ProductCard from "@/components/ProductCard";
-import Image, { StaticImageData } from "next/image";
-import prod1 from "/public/prod1.png";
-import female9 from "/public/female9.png";
-import prod3 from "/public/prod3.png";
+import { Products } from "@/utils/mock";
 
 const ProductList = () => {
+  const productChecks = Products.slice(0, 3);
   return (
     <div>
       <div className="mt-16">
@@ -16,10 +13,16 @@ const ProductList = () => {
           Check what we have
         </h1>
       </div>
-      <div className="flex gap-8 mt-10">
-        <ProductCard title="Brushed Raglan Sweatshirt" price={115.00} img={prod1}/>
-        <ProductCard title="Summer jacket " price={140.00} img={female9} />
-        <ProductCard title="Imperial Alpaca Hoodie" price={120.00} img={prod3} />
+      <div className="flex flex-col items-center md:flex-row gap-8 mt-10 ">
+        {productChecks.map((Product) => (
+          <ProductCard
+            key={Product.id}
+            title={Product.name}
+            price={Product.price}
+            img={Product.Image}
+            category={Product.category}
+          />
+        ))}
       </div>
     </div>
   );

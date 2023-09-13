@@ -1,14 +1,13 @@
 import { Products } from "@/utils/mock";
 import { StaticImageData } from "next/image";
 import ProductCard from "@/components/ProductCard";
-import { privateDecrypt } from "crypto";
 
-const getProductsDetail = (id: number | string) => {
-  return Products.filter((product) => product.id === id);
+const getProductByCategory = (category: string) => {
+  return Products.filter((product) => product.category === category);
 };
 
-export default function Page({ params }: { params: { id: string } }) {
-  const result = getProductsDetail(params.id);
+export default function Page({ params }: { params: { slug: string } }) {
+  const result = getProductByCategory(params.slug);
   return (
     <div className="flex justify-evenly mt-10">
       {result.length > 0 ? (

@@ -1,6 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import { Products } from "@/utils/mock";
 import { StaticImageData } from "next/image";
+import { Product } from '@/utils/types';
 
 const ProductList = () => {
   const productChecks = Products.slice(0, 3);
@@ -22,6 +23,7 @@ const ProductList = () => {
             price={Product.price}
             img={Product.Image as StaticImageData}
             category={Product.category}
+            id={Product.id}
           />
         ))}
       </div>

@@ -10,6 +10,7 @@ const AllProducts = () => {
           price={Product.price}
           img={Product.Image}
           category={Product.category}
+          id={Product.id}
         />
       ))}
     </div>
